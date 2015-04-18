@@ -56,24 +56,27 @@ modkey = "Mod4"
 --#############################################################################
 -- Tags, Layouts, & Wallpapers
 --#############################################################################
-awful.layout.layouts = {
+local layouts = {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
 }
+--tags = {}
+--for s = 1, screen.count() do
+--    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+--end
+tags = {
+    names1  = { "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x" },
+    layout1 = { layouts[1], layouts[1], layouts[2], layouts[1], layouts[1],
+              layouts[1], layouts[1], layouts[1], layouts[1], layouts[1] },
+}
 
-tags = {}
-for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, awful.layout.layouts[1])
-end
 
 beautiful.init("/home/cpw/.config/awesome/themes/cpw/theme.lua")
 
-if beautiful.wallpaper then
-    for s = 1, screen.count() do
-        gears.wallpaper.maximized(beautiful.wallpaper1, s, true)
-    end
+for s = 1, screen.count() do
+    tags[s] = awful.tag(tags.names1, s, tags.layout1)
+    gears.wallpaper.maximized(beautiful.wallpaper1, s, true)
 end
 
 --#############################################################################
@@ -282,8 +285,8 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { tag = tags[1][2] } },
+    --{ rule = { class = "Firefox" },
+    --  properties = { tag = tags[1][2] } },
 }
 
 -- Signals
