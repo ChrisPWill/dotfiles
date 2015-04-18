@@ -1,0 +1,125 @@
+!
+! X dotfile
+! ~/.Xresources
+! Name: cpw
+!
+
+!##############################################################################
+! Global Colorscheme Notes
+!##############################################################################
+! Apps: Xresources (irssi, ncmpcpp, terminal, tcli, ranger), firefox (userChrome, pentadactyl, website css), vim
+! (colorscheme, airline), awesome, zsh, alsi, calendar.
+
+! White (a snow white):         #f9f9f9
+! Black (a faded black):        #707070
+! Darker Gray:                  #adadad
+! Gray (a dusky gray):          #e0e0e0
+! Green:                        #abd8a5
+! Lighter Gray:                 #ebebeb
+! Red/Pink (flourescent faded): #FF96A3
+! Darker Red (faded burgundy):  #a27b7f
+
+!##############################################################################
+! falac White Colorscheme: Customized
+!##############################################################################
+
+! 0: Black
+URxvt*color0 : #505050
+URxvt*color8 : #727272
+
+! 1: Red
+URxvt*color1: #FF96A3
+URxvt*color9: #a27b7f
+
+! 2: Green
+URxvt*color2 : #abd8a5
+URxvt*color10 : #80a27b
+
+! 3. Yellow/Orange
+URxvt*color3: #bfa5d8
+URxvt*color11: #9884ac
+
+! 4. Blue
+URxvt*color4: #a5abd8
+URxvt*color12: #7b80a2
+
+! 5. Magenta
+URxvt*color5 : #d8a5d2
+URxvt*color13 : #a27b9d
+
+! 6. Cyan
+URxvt*color6 : #a5d2d8
+URxvt*color14 : #7b9da2
+
+! 7. White
+URxvt*color7 : #adadad
+URxvt*color15 : #505050
+
+URxvt*background: #f9f9f9
+URxvt*foreground: #707070
+URxvt*colorUL: #9693b5
+URxvt*borderColor: #f9f9f9
+
+!##############################################################################
+! Fonts
+!##############################################################################
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+!URxvt*font: xft:lemon:pixelsize=11:antialias=false,\
+!            [codeset=JISX0208]xft:Kochi Gothic,\
+!            [codeset=KSC5601]xft:Baekmuk Dotum,\
+!            xft:WenQuanYi Bitmap Song
+!URxvt*boldFont: xft:lemon:pixelsize=11:antialias=false,\
+!            [codeset=JISX0208]xft:Kochi Gothic,\
+!            [codeset=KSC5601]xft:Baekmuk Dotum,\
+!            xft:WenQuanYi Bitmap Song
+URxvt*font: xft:uushi:pixelsize=11:antialias=false,\
+            [codeset=JISX0208]xft:Kochi Gothic,\
+            [codeset=KSC5601]xft:Baekmuk Dotum,\
+            xft:WenQuanYi Bitmap Song
+URxvt*boldFont: xft:uushi:pixelsize=11:antialias=false,\
+            [codeset=JISX0208]xft:Kochi Gothic,\
+            [codeset=KSC5601]xft:Baekmuk Dotum,\
+            xft:WenQuanYi Bitmap Song
+URxvt*imFont: -*-Kochi Gothic-medium-r-normal--11-140-*-*-*-*-*-*
+
+!##############################################################################
+! Scrolling and Cursor
+!##############################################################################
+
+URxvt*saveLines: 10000
+URxvt*scrollstyle: plain
+URxvt*scrollBar: false
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+
+!##############################################################################
+! Keybindings
+!##############################################################################
+
+URxvt.keysym.C-u: command:\033]720;1\007
+URxvt.keysym.C-d: command:\033]721;1\007
+! Somehow map it to some obscure key, and then map that key via Vim.
+!URxvt.keysym.S-space: command: \033[1~
+URxvt.iso14755: False
+
+!##############################################################################
+! Various Settings
+!##############################################################################
+
+!URxvt.perl-lib: /home/cpw/.config/urxvt
+URxvt.perl-ext: default,matcher
+URxvt.matcher.button: 1
+URxvt.urlLauncher: /usr/bin/firefox
+! Highlight to end of last character, not the full line (particularly more convenient for yanking).
+! Not working.
+!URxvt.highlightSelection: true
+
+! vim: ft=xdefaults

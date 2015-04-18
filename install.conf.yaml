@@ -2,13 +2,21 @@
     ~/.config/awesome:
         create: true
         path: .config/awesome/
+    ~/.config/gtk-3.0:
+        create: true
+        path: .config/gtk-3.0/
     ~/.oh-my-zsh:
         create: true
         path: .oh-my-zsh/
     ~/.bashrc: .bashrc
+    ~/.config/compton.conf: .config/compton.conf
+    ~/.pythonrc: .pythonrc
     ~/.vimrc: .vimrc
     ~/.xinitrc: .xinitrc
+    ~/.Xresources: .Xresources
     ~/.zlogin: .zlogin
+    ~/.zprofile: .zprofile
+    ~/.zshenv: .zshenv
     ~/.zshrc:
         force: true
         path: .zshrc        
