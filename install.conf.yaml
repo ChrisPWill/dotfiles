@@ -1,8 +1,12 @@
 - link:
+    ~/.config/awesome:
+        create: true
+        path: .config/awesome/
     ~/.oh-my-zsh:
         create: true
         path: .oh-my-zsh/
     ~/.bashrc: .bashrc
+    ~/.vimrc: .vimrc
     ~/.xinitrc: .xinitrc
     ~/.zlogin: .zlogin
     ~/.zshrc:
