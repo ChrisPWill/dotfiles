@@ -390,6 +390,7 @@ alias suspend="sudo pm-suspend-hybrid"     # Don't require prepending sudo. Also
 alias xsetd="xset dpms force off"          # Turn off display.
 
 # Miscellaneous custom commands.
+alias fonts='mkfontdir ~/.fonts;mkfontscale ~/.fonts;xset +fp ~/.fonts;xset fp rehash;fc-cache;fc-cache -fv'
 alias rm='echo "This is not the command you are looking for."; false' #Never use rm again.
 alias sv="sudo vim"
 

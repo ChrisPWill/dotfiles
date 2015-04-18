@@ -5,6 +5,9 @@
     ~/.config/gtk-3.0:
         create: true
         path: .config/gtk-3.0/
+    ~/.fonts:
+        create: true
+        path: .fonts/
     ~/.oh-my-zsh:
         create: true
         path: .oh-my-zsh/

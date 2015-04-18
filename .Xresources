@@ -114,7 +114,7 @@ URxvt.iso14755: False
 ! Various Settings
 !##############################################################################
 
-!URxvt.perl-lib: /home/cpw/.config/urxvt
+!URxvt.perl-lib: /home/nil/.config/urxvt
 URxvt.perl-ext: default,matcher
 URxvt.matcher.button: 1
 URxvt.urlLauncher: /usr/bin/firefox
