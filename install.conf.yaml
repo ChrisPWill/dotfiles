@@ -2,9 +2,6 @@
     ~/.config/awesome:
         create: true
         path: .config/awesome/
-    ~/.config/gtk-3.0:
-        create: true
-        path: .config/gtk-3.0/
     ~/.fonts:
         create: true
         path: .fonts/
