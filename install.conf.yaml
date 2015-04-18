@@ -1,0 +1,10 @@
+- link:
+    ~/.oh-my-zsh:
+        create: true
+        path: .oh-my-zsh/
+    ~/.bashrc: .bashrc
+    ~/.xinitrc: .xinitrc
+    ~/.zlogin: .zlogin
+    ~/.zshrc:
+        force: true
+        path: .zshrc        
