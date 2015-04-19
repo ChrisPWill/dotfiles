@@ -24,8 +24,8 @@
 !##############################################################################
 
 ! 0: Black
-URxvt*color0 : #505050
-URxvt*color8 : #727272
+URxvt*color0 : #434343
+URxvt*color8 : #707070
 
 ! 1: Red
 URxvt*color1: #FFA996
@@ -55,10 +55,10 @@ URxvt*color14 : #88A7AB
 URxvt*color7 : #CACACA
 URxvt*color15 : #737373
 
-URxvt*background: #707070
+URxvt*background: #434343
 URxvt*foreground: #f9f9f9
 URxvt*colorUL: #AAA8C3
-URxvt*borderColor: #707070
+URxvt*borderColor: #434343
 
 !##############################################################################
 ! Fonts
