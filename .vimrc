@@ -64,7 +64,7 @@ if has('gui_running')
 else
     colorscheme bclear
 endif
-set background=light
+set background=dark
 
 " Disable autocompletion for python-mode (already using YCM)
 let g:pymode_rope_completion = 0

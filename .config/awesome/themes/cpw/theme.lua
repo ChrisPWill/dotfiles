@@ -6,20 +6,20 @@ theme = {}
 
 theme.font          = "nu 9"
 
-theme.bg_normal     = "#f9f9f9"
-theme.bg_focus      = "#707070"
-theme.bg_urgent     = "#707070"
-theme.bg_minimize   = "#707070"
+theme.bg_normal     = "#707070"
+theme.bg_focus      = "#f9f9f9"
+theme.bg_urgent     = "#f9f9f9"
+theme.bg_minimize   = "#f9f9f9"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#707070"
-theme.fg_focus      = "#f9f9f9"
-theme.fg_urgent     = "#f9f9f9"
-theme.fg_minimize   = "#f9f9f9"
+theme.fg_normal     = "#f9f9f9"
+theme.fg_focus      = "#707070"
+theme.fg_urgent     = "#707070"
+theme.fg_minimize   = "#707070"
 
 theme.border_width  = 2
-theme.border_normal = "#e0e0e0"
-theme.border_focus  = "#707070"
+theme.border_normal = "#707070"
+theme.border_focus  = "#e0e0e0"
 theme.border_marked = "#91231c"
 
 theme.layout_floating = "/home/cpw/.config/awesome/themes/cpw/layouts/floating.png"

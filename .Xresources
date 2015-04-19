@@ -16,7 +16,7 @@
 ! Gray (a dusky gray):          #e0e0e0
 ! Green:                        #abd8a5
 ! Lighter Gray:                 #ebebeb
-! Red/Pink (flourescent faded): #FF96A3
+! Red/orange:                   #FFA996
 ! Darker Red (faded burgundy):  #a27b7f
 
 !##############################################################################
@@ -28,37 +28,37 @@ URxvt*color0 : #505050
 URxvt*color8 : #727272
 
 ! 1: Red
-URxvt*color1: #FF96A3
-URxvt*color9: #a27b7f
+URxvt*color1: #FFA996
+URxvt*color9: #CC8778
 
 ! 2: Green
 URxvt*color2 : #abd8a5
-URxvt*color10 : #80a27b
+URxvt*color10 : #8DAB88
 
 ! 3. Yellow/Orange
-URxvt*color3: #bfa5d8
-URxvt*color11: #9884ac
+URxvt*color3: #CBB6E0
+URxvt*color11: #AD9DBD
 
 ! 4. Blue
 URxvt*color4: #a5abd8
-URxvt*color12: #7b80a2
+URxvt*color12: #9599B5
 
 ! 5. Magenta
 URxvt*color5 : #d8a5d2
-URxvt*color13 : #a27b9d
+URxvt*color13 : #B394B0
 
 ! 6. Cyan
 URxvt*color6 : #a5d2d8
-URxvt*color14 : #7b9da2
+URxvt*color14 : #88A7AB
 
 ! 7. White
-URxvt*color7 : #adadad
-URxvt*color15 : #505050
+URxvt*color7 : #CACACA
+URxvt*color15 : #737373
 
-URxvt*background: #f9f9f9
-URxvt*foreground: #707070
-URxvt*colorUL: #9693b5
-URxvt*borderColor: #f9f9f9
+URxvt*background: #707070
+URxvt*foreground: #f9f9f9
+URxvt*colorUL: #AAA8C3
+URxvt*borderColor: #707070
 
 !##############################################################################
 ! Fonts
