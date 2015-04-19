@@ -96,9 +96,13 @@ awesomemenu = {
    { "quit", awesome.quit }
 }
 
+screenshots = {
+   { "⮤ scrot m", "scrot -m /home/cpw/cpw/media/pictures/screencaps/scrot/%Y-%m-%d-%T.png" }
+}
+
 mymainmenu = awful.menu({ items = { 
     { "⮪ awesome", awesomemenu },
-    { "⮪ system", system },
+    { "⮪ screenshots", screenshots },
     { "terminal", terminal }
     }
 })

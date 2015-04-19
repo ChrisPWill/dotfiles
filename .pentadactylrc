@@ -1,0 +1,110 @@
+"
+" ~/.pentadactylrc
+" Author: Chris Williams <chrispwill.com>
+"
+" Settings
+" -----------------------------------------------------------------------------
+
+"##############################################################################
+" Styles
+"##############################################################################
+
+
+"##############################################################################
+" Set
+"##############################################################################
+
+set complete=slSf
+set guioptions=brs
+set maxitems=5
+set newtab=help
+set showtabline=multitab
+set titlestring=
+set hlfind
+" Basically the same as vim EasyMotion
+set hintkeys="hneiotsradluygpfwqkmvcxzbjEIOTSRAHDLUYGPFWQKMVCXZBJ"
+
+
+" Mappings
+" -----------------------------------------------------------------------------
+
+"##############################################################################
+" General
+"##############################################################################
+map , <Leader>
+
+" First/last tab
+map -modes=n -builtin 0 g0 
+map -modes=n -builtin $ g$
+
+" Bookmarks
+" -----------------------------------------------------------------------------
+
+" chrispwill.com
+map -modes=n -builtin <Leader>cc :tabopen! http://chrispwill.com/<CR>
+map -modes=n -builtin <Leader>cb :tabopen! http://chrispwill.com/blog<CR>
+
+" gits
+map -modes=n -builtin <Leader>gh :tabopen! https://github.com/<CR>
+map -modes=n -builtin <Leader>gc :tabopen! https://github.com/ChrisPWill<CR>
+map -modes=n -builtin <Leader>bb :tabopen! https://bitbucket.org/<CR>
+map -modes=n -builtin <Leader>bc :tabopen! https://bitbucket.org/ChrisPWill<CR>
+
+" Communities
+map -modes=n -builtin <Leader>44 :tabopen! http://boards.4chan.org/<CR>
+map -modes=n -builtin <Leader>4g :tabopen! http://boards.4chan.org/g/<CR>
+map -modes=n -builtin <Leader>rr :tabopen! http://reddit.com<CR>
+
+" mail
+map -modes=n -builtin <Leader>m0 :tabopen! https://mail.google.com/mail/u/0/#inbox<CR>
+
+" social
+map -modes=n -builtin <Leader>fb :tabopen! https://www.facebook.com/<CR>
+
+" Functions & Macros
+" -----------------------------------------------------------------------------
+
+"##############################################################################
+" Edit in external editor, with filetype syntax!
+"##############################################################################
+
+javascript <<EOF
+function editExternallyWithFiletype() {
+    var save_editor = options["editor"];
+    var filetype = websiteFiletypes();
+    console.log(filetype)
+    options["editor"] = options["editor"].replace(/ "\+/, " \"+setf " + filetype + "|")
+    if (options["editor"] == save_editor) {
+        options["editor"] += " \"+setf " + filetype + "\"";
+    }
+    editor.editFieldExternally();
+    options["editor"] = save_editor;
+}
+function websiteFiletypes() {
+    var host = buffer.URL.host
+    switch(host.replace(/^www\./, "")) {
+        case "github.com":
+            if (! buffer.URL.path.match("/wiki/"))
+                return "markdown";
+        case "goodreads.com":
+            return "html";
+        case "myanimelist.net":
+            return "bbcode";
+        case "reddit.com":
+            return "markdown";
+        case "stackoverflow.com":
+            return "markdown";
+    }
+    if (host.match(/.*\.4chan\.org$/))
+        return "4chan";
+    if (host.match(/.*\.wordpress\.com$/))
+        return "html";
+}
+EOF
+map -modes=i -builtin <C-e> -javascript editExternallyWithFiletype()
+
+"##############################################################################
+" Macros
+"##############################################################################
+
+
