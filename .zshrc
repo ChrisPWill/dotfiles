@@ -99,16 +99,16 @@ bindkey "^I" expand-or-complete-with-dots
 # This changes PS1 dynamically depending on insert or command mode.
 
 autoload -U colors && colors
-PS1="%{[38;05;8;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;8;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+PS1="%{[38;05;230;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
 
 zle-keymap-select () {
 if [[ $TERM == "rxvt-unicode" || $TERM == "rxvt-unicode-256color" ]]; then
     if [ $KEYMAP = vicmd ]; then
-        PS1="%{[38;05;8;48;05;2m%} %(!.%S-ROOT-%s.%n) %{[38;05;2;48;05;1m%}⮀%{[00m%}%{[38;05;8;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+        PS1="%{[38;05;230;48;05;2m%} %(!.%S-ROOT-%s.%n) %{[38;05;2;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
         () { return $__prompt_status }
         zle reset-prompt
     else
-        PS1="%{[38;05;8;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;8;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+        PS1="%{[38;05;230;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
         () { return $__prompt_status }
         zle reset-prompt
     fi
@@ -119,7 +119,7 @@ zle -N zle-keymap-select
 zle-line-init () {
     zle -K viins
     if [[ $TERM == "rxvt-unicode" || $TERM = "rxvt-unicode-256color" ]]; then
-        PS1="%{[38;05;8;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;8;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+        PS1="%{[38;05;230;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
         () { return $__prompt_status }
         zle reset-prompt
     fi
