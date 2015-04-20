@@ -1,0 +1,5 @@
+MPV:
+----
+- If possible, change time remaining/time of video to suit the speed at which it's playing
+- Sort out volume control
+- Sort out appropriate hotkeys for skipping (5/10/30 seconds)
