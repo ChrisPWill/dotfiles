@@ -2,6 +2,9 @@
     ~/.config/awesome:
         create: true
         path: .config/awesome/
+    ~/.config/ranger:
+        create: true
+        path: .config/ranger/
     ~/.fonts:
         create: true
         path: .fonts/
