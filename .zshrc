@@ -336,8 +336,8 @@ bindkey -M vicmd "G" end-of-buffer-or-history   # G
 bindkey -M vicmd "^R" redo                      # CTRL-R
 
 # Colemak.
-bindkey -M vicmd "s" backward-char              # i_s
-bindkey -M vicmd "t" forward-char               # i_t
+#bindkey -M vicmd "s" backward-char              # i_s
+#bindkey -M vicmd "t" forward-char               # i_t
 #Note zshrc cannot physically do this, but urxvt itself cannot detect vicmd/viins apart..
 #bindkey -M vicmd "n" SCROLL DAMMIT!!            # n
 #bindkey -M vicmd "e" SCROLL DAMMIT!!            # e
@@ -407,3 +407,7 @@ alias -- ---='cd -3'
 
 alias scrot="scrot -c -d 3 ~/cpw/media/pictures/screencaps/scrot/%Y-%m-%d-%T.png"
 alias byzanz-record="cd ~/cpw/media/pictures/screencaps/byzanz && byzanz-record -c -d 10 cpw.gif && cd -"
+
+# Bookmarks
+alias godev='cd /home/cpw/cpw/dev'
+alias gomedia='cd /home/cpw/cpw/media'

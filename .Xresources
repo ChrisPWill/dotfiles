@@ -55,9 +55,9 @@ URxvt*color14 : #88A7AB
 URxvt*color7 : #CACACA
 URxvt*color15 : #737373
 
-URxvt*depth: 32
-URxvt*background: rgba:4300/4300/4300/dddd
-!URxvt*background: #434343
+!URxvt*depth: 32
+!URxvt*background: rgba:4300/4300/4300/dddd
+URxvt*background: #434343
 URxvt*foreground: #f9f9f9
 URxvt*colorUL: #AAA8C3
 URxvt*borderColor: #434343
