@@ -1,4 +1,14 @@
-MPV:
+vim/gvim:
+---------
+- Change colour scheme to match system-wide scheme in gvim
+- Show only the current folder in the prompt (not the full path)
+
+zsh:
+----
+- Tweak hotkeys/educate myself to make things more intuitive
+
+mpv:
 ----
 - Sort out volume control
 - Sort out appropriate hotkeys for skipping (5/10/30 seconds)
+
