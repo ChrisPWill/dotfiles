@@ -1,3 +1,7 @@
+general:
+--------
+- Unify hotkey setup between firefox/vim/zsh/mpv/ranger
+
 vim/gvim:
 ---------
 - Change colour scheme to match system-wide scheme in gvim
@@ -11,4 +15,3 @@ mpv:
 ----
 - Sort out volume control
 - Sort out appropriate hotkeys for skipping (5/10/30 seconds)
-

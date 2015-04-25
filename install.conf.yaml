@@ -13,6 +13,7 @@
         path: .oh-my-zsh/
     ~/.bashrc: .bashrc
     ~/.config/compton.conf: .config/compton.conf
+    ~/.config/redshift.conf: .config/redshift.conf
     ~/.pentadactylrc: .pentadactylrc
     ~/.pythonrc: .pythonrc
     ~/.vimrc: .vimrc
