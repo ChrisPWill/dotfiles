@@ -13,5 +13,3 @@ zsh:
 
 mpv:
 ----
-- Sort out volume control
-- Sort out appropriate hotkeys for skipping (5/10/30 seconds)
