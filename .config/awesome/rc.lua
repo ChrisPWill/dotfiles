@@ -193,6 +193,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey            }, "l", function () awful.client.focus.bydirection("right")
         if client.focus then client.focus:raise() end end), 
 --#############################################################################
+-- Keybindings: Laptop controls
+--#############################################################################
+--#############################################################################
 -- Keybindings: Application Focusing & Spawning
 --#############################################################################
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),

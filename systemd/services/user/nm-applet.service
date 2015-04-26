@@ -1,0 +1,11 @@
+[Unit]
+Description=NetworkManager applet (GTK)
+After=NetworkManager.service
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/nm-applet
+Restart=always
+
+[Install]
+WantedBy=default.target

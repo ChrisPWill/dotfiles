@@ -20,6 +20,7 @@
     ~/.pentadactylrc: .pentadactylrc
     ~/.pythonrc: .pythonrc
     ~/.vimrc: .vimrc
+    ~/.xbindkeysrc: .xbindkeysrc
     ~/.xinitrc: .xinitrc
     ~/.Xresources: .Xresources
     ~/.zlogin: .zlogin

@@ -1,0 +1,4 @@
+"light -U 2"
+    XF86MonBrightnessDown
+"light -A 2"
+    XF86MonBrightnessUp

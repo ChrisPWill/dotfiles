@@ -15,6 +15,7 @@
 
 compton -b
 xrdb -merge ~/.Xresources
+xbindkeys
 
 # Autostart section
 exec awesome
