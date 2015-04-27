@@ -1,6 +1,12 @@
 general:
 --------
 - Unify hotkey setup between firefox/vim/zsh/mpv/ranger
+- Add batterymon to autostart daemons
+
+installations:
+--------------
+- install freemind or other brainstorming type app
+- install anki or other flashcard type app
 
 vim/gvim:
 ---------
