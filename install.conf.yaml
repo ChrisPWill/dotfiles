@@ -17,6 +17,7 @@
     ~/.bashrc: .bashrc
     ~/.config/compton.conf: .config/compton.conf
     ~/.config/redshift.conf: .config/redshift.conf
+    ~/.livestreamerrc: .livestreamerrc
     ~/.pentadactylrc: .pentadactylrc
     ~/.pythonrc: .pythonrc
     ~/.vimrc: .vimrc

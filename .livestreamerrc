@@ -1,0 +1,6 @@
+player=/usr/bin/mpv --cache-secs=5 --cache-initial=25000
+player-no-close
+
+hls-segment-thread=4
+
+twitch-oauth-token=a6cue6gffz69s6ulouw2h2uebk5i22
