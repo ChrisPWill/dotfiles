@@ -20,6 +20,9 @@
     ~/.livestreamerrc: .livestreamerrc
     ~/.pentadactylrc: .pentadactylrc
     ~/.pythonrc: .pythonrc
+    ~/.rssdler/config.txt:
+        create: true
+        path: .rssdler/config.txt
     ~/.vimrc: .vimrc
     ~/.xbindkeysrc: .xbindkeysrc
     ~/.xinitrc: .xinitrc
