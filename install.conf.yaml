@@ -8,6 +8,9 @@
     ~/.config/ranger:
         create: true
         path: .config/ranger/
+    ~/.config/rssdler:
+        create: true
+        path: .config/rssdler/
     ~/.fonts:
         create: true
         path: .fonts/
