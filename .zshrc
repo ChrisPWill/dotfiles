@@ -386,12 +386,13 @@ alias python="python -q"                   # Hide startup message.
 # Power Management Controls.
 alias poweroff="sudo poweroff"             # Don't require prepending sudo.
 alias reboot="sudo reboot"                 # Don't require prepending sudo.
-alias suspend="sudo pm-suspend-hybrid"     # Don't require prepending sudo. Also the best low power suspension state.
+alias suspend="systemctl suspend"     # Don't require prepending sudo. Also the best low power suspension state.
 alias xsetd="xset dpms force off"          # Turn off display.
 
 # Miscellaneous custom commands.
 alias fonts='mkfontdir ~/.fonts;mkfontscale ~/.fonts;xset +fp ~/.fonts;xset fp rehash;fc-cache;fc-cache -fv'
 alias rm='echo "This is not the command you are looking for."; false' #Never use rm again.
+alias emnw='emacs -nw'
 alias sv="sudo vim"
 
 # Restart configs.
