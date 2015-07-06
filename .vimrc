@@ -28,7 +28,7 @@ Plugin 'sudo.vim'
 " vimproc
 Plugin 'Shougo/vimproc.vim'
 " ghcmod for Haskell
-Plugin 'eagletmt/ghcmod-vim'
+" Plugin 'eagletmt/ghcmod-vim'
 " python-mode
 Plugin 'klen/python-mode'
 " CTRL-P
