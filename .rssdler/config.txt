@@ -1,0 +1,33 @@
+#########################################################
+[global]
+#########################################################
+
+downloadDir = /home/cpw/cpw/downloads/torrent_files
+workingDir = /home/cpw/.config/rssdler
+minSize = 10
+maxSize = 0
+log = 3
+logFile = /home/cpw/.config/rssdler/rssdlerlog.log
+verbose = 3
+scanMins = 5
+sleepTime = 5
+runOnce = False
+urllib = True
+
+#########################################################
+[one piece]
+#########################################################
+link = http://www.nyaa.se/?page=rss&term=horrible+one+piece+720p
+directory = /home/cpw/cpw/downloads/torrent_files/one_piece
+
+#########################################################
+[naruto]
+#########################################################
+link = http://www.nyaa.se/?page=rss&term=horrible+naruto+720p
+directory = /home/cpw/cpw/downloads/torrent_files/naruto
+
+#########################################################
+[game of thrones]
+#########################################################
+link = https://kat.cr/usearch/game%20of%20thrones%201080p%20BATV/?rss=1
+directory = /home/cpw/cpw/downloads/torrent_files/game_of_thrones

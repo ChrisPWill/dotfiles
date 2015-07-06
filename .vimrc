@@ -68,6 +68,7 @@ set background=dark
 
 " Disable autocompletion for python-mode (already using YCM)
 let g:pymode_rope_completion = 0
+let g:ycm_confirm_extra_conf = 0
 
 
 map <C-n> :NERDTreeToggle<CR>

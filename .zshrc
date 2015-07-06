@@ -378,7 +378,7 @@ alias du="du -h -c"                        # Display sizes in human readable for
 alias mpd="mpd ~/.config/mpd/mpd.conf"     # Default directory for configuration files.
 alias mount="sudo mount"                   # Don't require prepending sudo.
 alias umount="sudo umount"                 # Don't require prepending sudo.
-alias youtube-dl="youtube-dl -citk --max-quality FORMAT --extract-audio --audio-format mp3" # Download with audio and things.
+# alias youtube-dl="youtube-dl -citk --max-quality FORMAT --extract-audio --audio-format mp3" # Download with audio and things.
 
 # Computing Environment default flags.
 alias python="python -q"                   # Hide startup message.

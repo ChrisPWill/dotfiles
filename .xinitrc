@@ -17,5 +17,7 @@ compton -b
 xrdb -merge ~/.Xresources
 xbindkeys
 
+rssdler -c ~/.config/rssdler/config.txt -d
+
 # Autostart section
 exec awesome

@@ -11,6 +11,9 @@
     ~/.emacs.d:
         create: true
         path: .emacs.d/
+    ~/.config/rssdler:
+        create: true
+        path: .config/rssdler/
     ~/.fonts:
         create: true
         path: .fonts/
@@ -23,6 +26,9 @@
     ~/.livestreamerrc: .livestreamerrc
     ~/.pentadactylrc: .pentadactylrc
     ~/.pythonrc: .pythonrc
+    ~/.rssdler/config.txt:
+        create: true
+        path: .rssdler/config.txt
     ~/.vimrc: .vimrc
     ~/.xbindkeysrc: .xbindkeysrc
     ~/.xinitrc: .xinitrc

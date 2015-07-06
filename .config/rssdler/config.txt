@@ -1,0 +1,25 @@
+#########################################################
+[global]
+#########################################################
+
+downloadDir = /home/cpw/Dropbox
+workingDir = /home/cpw/.config/rssdler
+minSize = 10
+maxSize = 0
+log = 3
+logFile = /home/cpw/.config/rssdler/rssdlerlog.log
+verbose = 3
+scanMins = 5
+sleepTime = 5
+runOnce = False
+urllib = True
+
+#########################################################
+[nyaa_horriblesubs]
+#########################################################
+
+link = http://www.nyaa.se/?page=rss&term=horriblesubs+720p
+download1 = Piece
+download1Dir = /home/cpw/cpw/torrent_files/one_piece
+download2 = Naruto
+download2Dir = /home/cpw/cpw/torrent_files/naruto
