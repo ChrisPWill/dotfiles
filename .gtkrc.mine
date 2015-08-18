@@ -1,0 +1,10 @@
+gtk-icon-theme-name = "elementary"
+
+style "schrift"
+{
+font_name = "DejaVu Sans 10"
+}
+widget_class "*" style "schrift"
+gtk-font-name = "DejaVu Sans 10"
+
+gtk-theme-name = "Clearlooks"

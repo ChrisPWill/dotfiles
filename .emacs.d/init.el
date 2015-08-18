@@ -3,6 +3,20 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
-(setq org-agenda-files (list "~/org/work.org"
-                             "~/org/home.org"
-                             "~/org/gamedev.org"))
+
+("H" "Office and Home Lists"
+     ((agenda)
+          (tags-todo "HOME")
+          (tags-todo "COMPUTER")
+          (tags-todo "SHOPPING")))
+
+("D" "Daily Action List"
+    (
+        (agenda "" ((org-agenda-ndays 1)
+                   (org-agenda-sorting-strategy
+                        (quote ((agenda time-up priority-down tag-up) )))
+                   (org-deadline-warning-days 0)
+                   )
+        )
+    )
+)
