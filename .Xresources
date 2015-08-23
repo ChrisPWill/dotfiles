@@ -110,7 +110,9 @@ URxvt.keysym.C-u: command:\033]720;1\007
 URxvt.keysym.C-d: command:\033]721;1\007
 ! Somehow map it to some obscure key, and then map that key via Vim.
 !URxvt.keysym.S-space: command: \033[1~
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
 
 !##############################################################################
 ! Various Settings

@@ -387,8 +387,6 @@ alias python="python -q"                   # Hide startup message.
 alias recj='ffmpeg -thread_queue_size 512 -f alsa -i pulse -f v4l2 -s 640x480 -i /dev/video0 $(date +%s).mpg'
 
 # Streams
-function lstreamh { livestreamer "$1" high; }
-export -f lstreamh
 
 # Power Management Controls.
 alias poweroff="sudo poweroff"             # Don't require prepending sudo.

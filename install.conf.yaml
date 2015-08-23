@@ -1,4 +1,7 @@
 - link:
+    ~/bin:
+        create: true
+        path: bin/
     ~/.config/awesome:
         create: true
         path: .config/awesome/

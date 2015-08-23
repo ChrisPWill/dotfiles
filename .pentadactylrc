@@ -108,3 +108,4 @@ map -modes=i -builtin <C-e> -javascript editExternallyWithFiletype()
 "##############################################################################
 
 
+js editor.defaultRegister="+"
