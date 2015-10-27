@@ -23,6 +23,9 @@
 ! falac White Colorscheme: Customized
 !##############################################################################
 
+! enable dynamic colors
+URxvt*dynamicColors: on
+
 ! 0: Black
 URxvt*color0 : #434343
 URxvt*color8 : #707070
@@ -41,7 +44,7 @@ URxvt*color11: #AD9DBD
 
 ! 4. Blue
 URxvt*color4: #a5abd8
-URxvt*color12: #9599B5
+URxvt*color12: #777a91
 
 ! 5. Magenta
 URxvt*color5 : #d8a5d2
@@ -57,10 +60,10 @@ URxvt*color15 : #737373
 
 !URxvt*depth: 32
 !URxvt*background: rgba:4300/4300/4300/dddd
-URxvt*background: #434343
-URxvt*foreground: #f9f9f9
+URxvt*background: #fffafa
+URxvt*foreground: #1b7387
 URxvt*colorUL: #AAA8C3
-URxvt*borderColor: #434343
+URxvt*borderColor: #fffafa
 
 !##############################################################################
 ! Fonts

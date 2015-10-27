@@ -17,6 +17,9 @@
     ~/.config/rssdler:
         create: true
         path: .config/rssdler/
+    ~/.dynamic-colors:
+        create: true
+        path: .dynamic-colors/
     ~/.fonts:
         create: true
         path: .fonts/

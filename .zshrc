@@ -381,7 +381,7 @@ alias umount="sudo umount"                 # Don't require prepending sudo.
 # alias youtube-dl="youtube-dl -citk --max-quality FORMAT --extract-audio --audio-format mp3" # Download with audio and things.
 
 # Computing Environment default flags.
-alias python="python -q"                   # Hide startup message.
+alias python="python3"                   # Hide startup message.
 
 # Journal stuff
 alias recj='ffmpeg -thread_queue_size 512 -f alsa -i pulse -f v4l2 -s 640x480 -i /dev/video0 $(date +%s).mpg'
