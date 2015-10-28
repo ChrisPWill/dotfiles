@@ -41,6 +41,8 @@ Plugin 'vim-scripts/hexHighlight.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lilydjwg/colorizer'
 "Plugin 'file:///home/chris/chris/.vim/bundle/chris'
+"vim-airline
+Plugin 'bling/vim-airline'
 
 
 " All of your Plugins must be added before the following line
@@ -77,3 +79,6 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+"Make airline appear always
+set laststatus=2
