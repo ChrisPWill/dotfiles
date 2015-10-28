@@ -416,6 +416,7 @@ alias byzanz-record="cd ~/cpw/media/pictures/screencaps/byzanz && byzanz-record 
 
 # Bookmarks
 alias godev='cd /home/cpw/cpw/dev'
+alias goweb='cd /home/cpw/cpw/web'
 alias gomedia='cd /home/cpw/cpw/media'
 
 # Games

@@ -11,6 +11,9 @@
     ~/.config/ranger:
         create: true
         path: .config/ranger/
+    ~/.config/systemd:
+        create: true
+        path: .config/systemd/
     ~/.emacs.d:
         create: true
         path: .emacs.d/
