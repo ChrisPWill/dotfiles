@@ -422,3 +422,5 @@ alias gomedia='cd /home/cpw/cpw/media'
 # Games
 alias evelauncher="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/eve.exe'"
 alias eveonline="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/bin/exefile.exe'"
+
+dynamic-colors switch solarized-dark-desaturated
