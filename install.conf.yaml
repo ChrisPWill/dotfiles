@@ -43,9 +43,12 @@
     ~/.rssdler/config.txt:
         create: true
         path: .rssdler/config.txt
+    ~/.stalonetrayrc: .stalonetrayrc
+    ~/.start-xmonad: .start-xmonad
     ~/.vimrc: .vimrc
     ~/.xbindkeysrc: .xbindkeysrc
     ~/.xinitrc: .xinitrc
+    ~/.xmobarrc: .xmobarrc
     ~/.Xresources: .Xresources
     ~/.zlogin: .zlogin
     ~/.zprofile: .zprofile
