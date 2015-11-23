@@ -29,6 +29,9 @@
     ~/.oh-my-zsh:
         create: true
         path: .oh-my-zsh/
+    ~/.pentadactyl/colors:
+       create: true
+       path: .pentadactyl/colors/
     ~/.xmonad:
         create: true
         path: .xmonad/
