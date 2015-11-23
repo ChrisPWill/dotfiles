@@ -29,6 +29,9 @@
     ~/.oh-my-zsh:
         create: true
         path: .oh-my-zsh/
+    ~/.xmonad:
+        create: true
+        path: .xmonad/
     ~/.bashrc: .bashrc
     ~/.config/compton.conf: .config/compton.conf
     ~/.config/redshift.conf: .config/redshift.conf
