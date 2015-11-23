@@ -109,3 +109,5 @@ map -modes=i -builtin <C-e> -javascript editExternallyWithFiletype()
 
 
 js editor.defaultRegister="+"
+
+style -name ublick * #nav-bar * { visibility: visible; }
