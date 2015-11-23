@@ -4,8 +4,6 @@ Config {
   , bgColor =       "#fffafa"
   , fgColor =       "#999999"
   , position =      TopP 0 76
-  , border =        BottomB
-  , borderColor =   "#688187"
 
   -- layout
   , sepChar =       "%"  -- separates plugin names and text

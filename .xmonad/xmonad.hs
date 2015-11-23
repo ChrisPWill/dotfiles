@@ -15,9 +15,11 @@ main :: IO ()
 main = do
     xmproc <- spawnPipe "xmobar"
     xmonad $ defaultConfig
-        { terminal    = "urxvt"
-        , modMask     = mod4Mask
-        , borderWidth = 2
+        { terminal           = "urxvt"
+        , modMask            = mod4Mask
+        , borderWidth        = 2
+        , normalBorderColor  = "#fffafa"
+        , focusedBorderColor = "#ccc9c9"
 
         , manageHook = manageDocks <+> manageHook defaultConfig <+> composeAll myManagementHooks
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
@@ -30,7 +32,7 @@ main = do
         [ 
          -- Custom Hotkeys
          -- > Launching/Termination
-          ((mod4Mask,               xK_r     ), spawn "dmenu_run")
+          ((mod4Mask,               xK_r     ), spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5")
         , ((mod4Mask,               xK_d     ), kill)
          -- > Application shortcuts
         , ((mod4Mask,               xK_Return), spawn $ "urxvt")    -- Terminal
