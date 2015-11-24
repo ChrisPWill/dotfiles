@@ -48,6 +48,7 @@
         path: .rssdler/config.txt
     ~/.stalonetrayrc: .stalonetrayrc
     ~/.start-xmonad: .start-xmonad
+    ~/.taskrc: .taskrc
     ~/.vimrc: .vimrc
     ~/.xbindkeysrc: .xbindkeysrc
     ~/.xinitrc: .xinitrc
