@@ -15,7 +15,7 @@
 "##############################################################################
 
 set complete=slSf
-set guioptions=brs
+set guioptions=brsT
 set maxitems=5
 set newtab=help
 set showtabline=multitab
