@@ -97,18 +97,26 @@ bindkey "^I" expand-or-complete-with-dots
 # Prompt Style {{{
 # -----------------------------------------------------------------------------
 # This changes PS1 dynamically depending on insert or command mode.
+#
+
+# Generates PS1 given background colour arguments
+# $1 = user bgcolour
+# $2 = directory bgcolour
+generate_ps1() {
+    PS1="%{[38;05;230;48;05;${1}m%} %(!.%S-ROOT-%s.%n) %{[38;05;${1};48;05;${2}m%}⮀%{[00m%}%{[38;05;230;48;05;${2}m%} %1~ %{[00m%}%{[38;05;${2}m%}⮀ %{[00m%}"
+}
 
 autoload -U colors && colors
-PS1="%{[38;05;230;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+generate_ps1 26 196
 
 zle-keymap-select () {
 if [[ $TERM == "rxvt-unicode" || $TERM == "rxvt-unicode-256color" ]]; then
     if [ $KEYMAP = vicmd ]; then
-        PS1="%{[38;05;230;48;05;2m%} %(!.%S-ROOT-%s.%n) %{[38;05;2;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+        generate_ps1 40 196
         () { return $__prompt_status }
         zle reset-prompt
     else
-        PS1="%{[38;05;230;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+        generate_ps1 26 196
         () { return $__prompt_status }
         zle reset-prompt
     fi
@@ -119,7 +127,7 @@ zle -N zle-keymap-select
 zle-line-init () {
     zle -K viins
     if [[ $TERM == "rxvt-unicode" || $TERM = "rxvt-unicode-256color" ]]; then
-        PS1="%{[38;05;230;48;05;4m%} %(!.%S-ROOT-%s.%n) %{[38;05;4;48;05;1m%}⮀%{[00m%}%{[38;05;230;48;05;1m%} %~ %{[00m%}%{[38;05;1m%}⮀ %{[00m%}"
+        generate_ps1 26 196
         () { return $__prompt_status }
         zle reset-prompt
     fi
@@ -423,4 +431,4 @@ alias gomedia='cd /home/cpw/cpw/media'
 alias evelauncher="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/eve.exe'"
 alias eveonline="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/bin/exefile.exe'"
 
-dynamic-colors switch solarized-dark-desaturated
+# dynamic-colors switch solarized-dark-desaturated

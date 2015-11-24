@@ -22,51 +22,51 @@ Config {
   , commands =
        -- weather monitor
        [ Run StdinReader
-       , Run Weather "YSSY" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C"
+       , Run Weather "YSSY" [ "--template", "<skyCondition> | <fc=blue><tempC></fc>°C"
                             ] 36000
 
        -- network activity monitor (dynamic interface resolution)
        , Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
                             , "--Low"      , "1000"       -- units: kB/s
                             , "--High"     , "5000"       -- units: kB/s
-                            , "--low"      , "darkgreen"
-                            , "--normal"   , "darkorange"
-                            , "--high"     , "darkred"
+                            , "--low"      , "green"
+                            , "--normal"   , "orange"
+                            , "--high"     , "red"
                             ] 10
 
        -- cpu activity monitor
        , Run MultiCpu       [ "--template" , "Cpu: <total0>%|<total1>%"
                             , "--Low"      , "50"         -- units: %
                             , "--High"     , "85"         -- units: %
-                            , "--low"      , "darkgreen"
-                            , "--normal"   , "darkorange"
-                            , "--high"     , "darkred"
+                            , "--low"      , "green"
+                            , "--normal"   , "orange"
+                            , "--high"     , "red"
                             ] 10
 
        -- memory usage monitor
        , Run Memory         [ "--template" ,"Mem: <usedratio>%"
                             , "--Low"      , "35"        -- units: %
                             , "--High"     , "85"        -- units: %
-                            , "--low"      , "darkgreen"
-                            , "--normal"   , "darkorange"
-                            , "--high"     , "darkred"
+                            , "--low"      , "green"
+                            , "--normal"   , "orange"
+                            , "--high"     , "red"
                             ] 10
 
        -- battery monitor
        , Run Battery        [ "--template" , "Batt: <acstatus>"
                             , "--Low"      , "10"        -- units: %
                             , "--High"     , "80"        -- units: %
-                            , "--low"      , "darkred"
-                            , "--normal"   , "darkorange"
-                            , "--high"     , "darkgreen"
+                            , "--low"      , "red"
+                            , "--normal"   , "orange"
+                            , "--high"     , "green"
 
                             , "--" -- battery specific options
                                       -- discharging status
                                       , "-o"	, "<left>% (<timeleft>)"
                                       -- AC "on" status
-                                      , "-O"	, "<fc=#dAA520>Charging</fc>"
+                                      , "-O"	, "<fc=orange>Charging</fc>"
                                       -- charged status
-                                      , "-i"	, "<fc=#006000>Charged</fc>"
+                                      , "-i"	, "<fc=green>Charged</fc>"
                             ] 50
 
        -- time and date indicator 

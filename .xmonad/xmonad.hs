@@ -17,9 +17,9 @@ main = do
     xmonad $ defaultConfig
         { terminal           = "urxvt"
         , modMask            = mod4Mask
-        , borderWidth        = 2
-        , normalBorderColor  = "#fffafa"
-        , focusedBorderColor = "#ccc9c9"
+        , borderWidth        = 1
+        , normalBorderColor  = "#eeeaea"
+        , focusedBorderColor = "#b5a9ff"
 
         , manageHook = manageDocks <+> manageHook defaultConfig <+> composeAll myManagementHooks
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
