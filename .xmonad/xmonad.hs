@@ -19,7 +19,7 @@ main = do
         , modMask            = mod4Mask
         , borderWidth        = 1
         , normalBorderColor  = "#eeeaea"
-        , focusedBorderColor = "#b5a9ff"
+        , focusedBorderColor = "#654dff"
 
         , manageHook = manageDocks <+> manageHook defaultConfig <+> composeAll myManagementHooks
         , layoutHook = avoidStruts  $  layoutHook defaultConfig

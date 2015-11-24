@@ -35,6 +35,9 @@
     ~/.xmonad:
         create: true
         path: .xmonad/
+    ~/.zsh:
+        create: true
+        path: .zsh/
     ~/.bashrc: .bashrc
     ~/.config/compton.conf: .config/compton.conf
     ~/.config/redshift.conf: .config/redshift.conf

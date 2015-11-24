@@ -99,10 +99,16 @@ bindkey "^I" expand-or-complete-with-dots
 # This changes PS1 dynamically depending on insert or command mode.
 #
 
+# vcs (git) prompt
+source ~/.zsh/zsh-vcs-prompt/zshrc.sh
+# ZSH_VCS_PROMPT_ENABLE_CACHING='true'
+
 # Generates PS1 given background colour arguments
 # $1 = user bgcolour
 # $2 = directory bgcolour
 generate_ps1() {
+    setopt PROMPT_SUBST
+    RPROMPT='$(vcs_super_info)'
     PS1="%{[38;05;230;48;05;${1}m%} %(!.%S-ROOT-%s.%n) %{[38;05;${1};48;05;${2}m%}⮀%{[00m%}%{[38;05;230;48;05;${2}m%} %1~ %{[00m%}%{[38;05;${2}m%}⮀ %{[00m%}"
 }
 
