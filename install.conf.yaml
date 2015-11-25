@@ -45,6 +45,7 @@
     ~/.gtkrc.mine: .gtkrc.mine
     ~/.livestreamerrc: .livestreamerrc
     ~/.pentadactylrc: .pentadactylrc
+    ~/.profile: .profile
     ~/.pythonrc: .pythonrc
     ~/.rssdler/config.txt:
         create: true
