@@ -29,7 +29,10 @@ data.location=~/.task
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
-context.eastlakes=-work -Quakers
-context.quakers=-work -Eastlakes
+context.eastlakes=-work -Quakers -shoplist -lol
+context.quakers=-work -Eastlakes -shoplist -lol
+context.eastlakes_shopping=+Eastlakes +shopping -lol
+context.work=-pproject -home +work
+context.transit=-home -work -shoplist -lol
 context=quakers
-context.eastlakes_shopping=+Eastlakes and +shopping
+context.league=+lol
