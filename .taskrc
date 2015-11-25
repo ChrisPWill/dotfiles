@@ -34,5 +34,5 @@ context.quakers=-work -Eastlakes -shoplist -lol
 context.eastlakes_shopping=+Eastlakes +shopping -lol
 context.work=-pproject -home +work
 context.transit=-home -work -shoplist -lol
-context=quakers
 context.league=+lol
+context=quakers

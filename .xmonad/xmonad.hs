@@ -14,6 +14,7 @@ myManagementHooks = [
 main :: IO ()
 main = do
     xmproc <- spawnPipe "xmobar"
+    spawn "xscreensaver -no-splash"
     xmonad $ defaultConfig
         { terminal           = "urxvt"
         , modMask            = mod4Mask

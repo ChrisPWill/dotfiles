@@ -8,7 +8,7 @@ Config {
   -- layout
   , sepChar =       "%"  -- separates plugin names and text
   , alignSep =      "}{" -- left-right alignment separator
-  , template =      "%StdinReader% }{ %multicpu% | %memory% || %battery% || %YSSY% | %date%"
+  , template =      "%StdinReader% }{ %multicpu% | %memory% || %battery% || %date%"
 
   -- general behaviour
   , lowerOnStart =      True  -- send to bottom of window stack
@@ -22,8 +22,8 @@ Config {
   , commands =
        -- weather monitor
        [ Run StdinReader
-       , Run Weather "YSSY" [ "--template", "<skyCondition> | <fc=blue><tempC></fc>°C"
-                            ] 36000
+       -- , Run Weather "YSSY" [ "--template", "<skyCondition> | <fc=blue><tempC></fc>°C"
+       --                     ] 36000
 
        -- network activity monitor (dynamic interface resolution)
        , Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
