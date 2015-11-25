@@ -41,8 +41,10 @@ Plugin 'vim-scripts/hexHighlight.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lilydjwg/colorizer'
 "Plugin 'file:///home/chris/chris/.vim/bundle/chris'
-"vim-airline
+" vim-airline
 Plugin 'bling/vim-airline'
+" Parenthesis matching for HTML tags
+Plugin 'gregsexton/MatchTag'
 
 
 " All of your Plugins must be added before the following line

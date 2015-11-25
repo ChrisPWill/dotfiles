@@ -34,6 +34,7 @@ main = do
          -- > Launching/Termination
           ((mod4Mask,               xK_r     ), spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5")
         , ((mod4Mask,               xK_d     ), kill)
+        , ((mod4Mask,               xK_z     ), spawn "xscreensaver-command -lock; xset dpms force off")
          -- > Application shortcuts
         , ((mod4Mask,               xK_Return), spawn $ "urxvt")    -- Terminal
          -- > Web

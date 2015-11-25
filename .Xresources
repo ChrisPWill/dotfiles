@@ -32,6 +32,7 @@ URxvt*color8 : #262626
 
 ! 1: Red
 URxvt*color1: #dc322f
+! 9: Orange
 URxvt*color9: #cb4b16
 
 ! 2: Green
@@ -44,15 +45,15 @@ URxvt*color11: #777777
 
 ! 4. Blue
 URxvt*color4: #268bd2
-URxvt*color12: #919191
+URxvt*color12: #1b6497
 
 ! 5. Magenta
 URxvt*color5 : #d33682
-URxvt*color13 : #6c71c4
+URxvt*color13 : #e481b1
 
 ! 6. Cyan
 URxvt*color6 : #2aa198
-URxvt*color14 : #9e9e9e
+URxvt*color14 : #71dad2
 
 ! 7. White
 URxvt*color7 : #e8e8e8
@@ -62,7 +63,7 @@ URxvt*color15 : #f6f6f6
 !URxvt*background: rgba:4300/4300/4300/dddd
 URxvt*background: #262626
 URxvt*foreground: #919191
-URxvt*colorUL: #303030
+URxvt*colorUL: #268bd2
 URxvt*borderColor: #262626
 
 !##############################################################################
