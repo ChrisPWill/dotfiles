@@ -403,14 +403,9 @@ alias recj='ffmpeg -thread_queue_size 512 -f alsa -i pulse -f v4l2 -s 640x480 -i
 # TaskWarrior (some lines gitignored for privacy)
 alias twl='task -BLOCKED'
 alias twcnone='task context none'
-alias twceastlakes='task context eastlakes' # gitignore
-alias twceastlakes_shopping='task context eastlakes_shopping' # gitignore
-alias twcquakers='task context quakers' # gitignore
 alias twcwork='task context work'
 alias twctransit='task context transit'
 alias twclol='task context league'
-alias twa_matchnotes='task add project:Matchnotes +django +pproject +programming +python +webdev ' # gitignore
-alias twa_elshopping='task add project:Shopping +Eastlakes +shoplist +shopping ' # gitignore
 alias twa_rustines='task add project:RustiNES +programming +pproject +rust '
  
 
