@@ -31,8 +31,8 @@ data.location=~/.task
 
 context.eastlakes=-work -Quakers -shoplist -lol
 context.quakers=-work -Eastlakes -shoplist -lol
-context.eastlakes_shopping=+Eastlakes +shopping -lol
+context.eastlakes_shopping=+Eastlakes +shopping -home -lol
 context.work=-pproject -home +work
 context.transit=-home -work -shoplist -lol
 context.league=+lol
-context=quakers
+context=eastlakes
