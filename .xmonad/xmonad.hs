@@ -1,6 +1,7 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ManageHelpers
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 
@@ -8,7 +9,8 @@ import System.IO
 
 myManagementHooks :: [ManageHook]
 myManagementHooks = [
-  resource =? "stalonetray" --> doIgnore
+  resource =? "stalonetray" --> doIgnore,
+  isFullscreen --> doFullFloat
   ]
 
 main :: IO ()
@@ -37,7 +39,7 @@ main = do
         , ((mod4Mask,               xK_d     ), kill)
         , ((mod4Mask,               xK_z     ), spawn "xscreensaver-command -lock; xset dpms force off")
          -- > Application shortcuts
-        , ((mod4Mask,               xK_Return), spawn $ "urxvt")    -- Terminal
+        , ((mod4Mask,               xK_Return), spawn "urxvt")    -- Terminal
          -- > Web
         , ((mod4Mask,               xK_f     ), spawn "firefox")
         ]
