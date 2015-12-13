@@ -400,6 +400,15 @@ alias python="python3"                   # Hide startup message.
 # Journal stuff
 alias recj='ffmpeg -thread_queue_size 512 -f alsa -i pulse -f v4l2 -s 640x480 -i /dev/video0 $(date +%s).mpg'
 
+# TaskWarrior (some lines gitignored for privacy)
+alias twl='task -BLOCKED'
+alias twcnone='task context none'
+alias twcwork='task context work'
+alias twctransit='task context transit'
+alias twclol='task context league'
+alias twa_rustines='task add project:RustiNES +programming +pproject +rust '
+ 
+
 # Streams
 
 # Power Management Controls.
