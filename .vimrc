@@ -86,3 +86,8 @@ set smartindent
 
 "Make airline appear always
 set laststatus=2
+
+set mouse=a
+
+" Keep buffers (including edited ones) open in background
+:set hidden
