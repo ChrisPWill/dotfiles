@@ -100,7 +100,7 @@ bindkey "^I" expand-or-complete-with-dots
 #
 
 # vcs (git) prompt
-source ~/.zsh/zsh-vcs-prompt/zshrc.sh
+# source ~/.zsh/zsh-vcs-prompt/zshrc.sh
 # ZSH_VCS_PROMPT_ENABLE_CACHING='true'
 
 # Generates PS1 given background colour arguments
@@ -108,7 +108,7 @@ source ~/.zsh/zsh-vcs-prompt/zshrc.sh
 # $2 = directory bgcolour
 generate_ps1() {
     setopt PROMPT_SUBST
-    RPROMPT='$(vcs_super_info)'
+    # RPROMPT='$(vcs_super_info)'
     PS1="%{[38;05;230;48;05;${1}m%} %(!.%S-ROOT-%s.%n) %{[38;05;${1};48;05;${2}m%}⮀%{[00m%}%{[38;05;230;48;05;${2}m%} %1~ %{[00m%}%{[38;05;${2}m%}⮀ %{[00m%}"
 }
 
@@ -375,6 +375,8 @@ bindkey -M vicmd "ga" what-cursor-position      # ga
 ###############################################################################
 # Alias
 ###############################################################################
+alias swap_caps_esc='/usr/bin/setxkbmap -option "caps:swapescape"'
+
 alias ls='ls -a --color'
 alias lsl='ls -lah --color'
 alias grep='grep --color'
@@ -447,3 +449,5 @@ alias evelauncher="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/eve
 alias eveonline="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/bin/exefile.exe'"
 
 # dynamic-colors switch solarized-dark-desaturated
+
+export PATH=$PATH:/home/cwilliams/phabricator/arcanist/bin

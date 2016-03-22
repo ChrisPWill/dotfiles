@@ -1,0 +1,177 @@
+
+xmonad.hs:13:3:
+    Couldn't match type `xmonad-0.11:XMonad.Core.Query' with `Query'
+    Expected type: Query Bool
+      Actual type: xmonad-0.11:XMonad.Core.Query Bool
+    In the first argument of `(-->)', namely `isFullscreen'
+    In the expression: isFullscreen --> doFullFloat
+    In the expression:
+      [resource =? "stalonetray" --> doIgnore,
+       isFullscreen --> doFullFloat]
+
+xmonad.hs:13:20:
+    Couldn't match type `xmonad-0.11:XMonad.Core.Query' with `Query'
+    Expected type: Query (Data.Monoid.Endo WindowSet)
+      Actual type: xmonad-0.11:XMonad.Core.ManageHook
+    In the second argument of `(-->)', namely `doFullFloat'
+    In the expression: isFullscreen --> doFullFloat
+    In the expression:
+      [resource =? "stalonetray" --> doIgnore,
+       isFullscreen --> doFullFloat]
+
+xmonad.hs:21:14:
+    Couldn't match expected type `xmonad-0.11:XMonad.Core.XConfig a0'
+                with actual type `XConfig
+                                    (XMonad.Layout.LayoutModifier.ModifiedLayout
+                                       AvoidStruts (Choose Tall (Choose (Mirror Tall) Full)))'
+    In the first argument of `additionalKeys', namely
+      `defaultConfig
+         {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+          normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+          manageHook = manageDocks <+> manageHook defaultConfig
+                       <+> composeAll myManagementHooks,
+          layoutHook = avoidStruts $ layoutHook defaultConfig,
+          logHook = dynamicLogWithPP
+                      (xmobarPP
+                         {ppOutput = hPutStrLn xmproc,
+                          ppTitle = xmobarColor "blue" "" . shorten 50,
+                          ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}'
+    In the second argument of `($)', namely
+      `defaultConfig
+         {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+          normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+          manageHook = manageDocks <+> manageHook defaultConfig
+                       <+> composeAll myManagementHooks,
+          layoutHook = avoidStruts $ layoutHook defaultConfig,
+          logHook = dynamicLogWithPP
+                      (xmobarPP
+                         {ppOutput = hPutStrLn xmproc,
+                          ppTitle = xmobarColor "blue" "" . shorten 50,
+                          ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}
+       `additionalKeys`
+         [((mod4Mask, xK_r), 
+           spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5"),
+          ((mod4Mask, xK_d), kill),
+          ((mod4Mask, xK_z), spawn "xscreensaver-command -lock"),
+          ((mod4Mask, xK_Return), spawn "urxvt"), ....]'
+    In a stmt of a 'do' block:
+      xmonad
+      $ defaultConfig
+          {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+           normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+           manageHook = manageDocks <+> manageHook defaultConfig
+                        <+> composeAll myManagementHooks,
+           layoutHook = avoidStruts $ layoutHook defaultConfig,
+           logHook = dynamicLogWithPP
+                       (xmobarPP
+                          {ppOutput = hPutStrLn xmproc,
+                           ppTitle = xmobarColor "blue" "" . shorten 50,
+                           ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}
+        `additionalKeys`
+          [((mod4Mask, xK_r), 
+            spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5"),
+           ((mod4Mask, xK_d), kill),
+           ((mod4Mask, xK_z), spawn "xscreensaver-command -lock"),
+           ((mod4Mask, xK_Return), spawn "urxvt"), ....]
+
+xmonad.hs:21:14:
+    Couldn't match expected type `XConfig l0'
+                with actual type `xmonad-0.11:XMonad.Core.XConfig a0'
+    In the second argument of `($)', namely
+      `defaultConfig
+         {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+          normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+          manageHook = manageDocks <+> manageHook defaultConfig
+                       <+> composeAll myManagementHooks,
+          layoutHook = avoidStruts $ layoutHook defaultConfig,
+          logHook = dynamicLogWithPP
+                      (xmobarPP
+                         {ppOutput = hPutStrLn xmproc,
+                          ppTitle = xmobarColor "blue" "" . shorten 50,
+                          ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}
+       `additionalKeys`
+         [((mod4Mask, xK_r), 
+           spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5"),
+          ((mod4Mask, xK_d), kill),
+          ((mod4Mask, xK_z), spawn "xscreensaver-command -lock"),
+          ((mod4Mask, xK_Return), spawn "urxvt"), ....]'
+    In a stmt of a 'do' block:
+      xmonad
+      $ defaultConfig
+          {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+           normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+           manageHook = manageDocks <+> manageHook defaultConfig
+                        <+> composeAll myManagementHooks,
+           layoutHook = avoidStruts $ layoutHook defaultConfig,
+           logHook = dynamicLogWithPP
+                       (xmobarPP
+                          {ppOutput = hPutStrLn xmproc,
+                           ppTitle = xmobarColor "blue" "" . shorten 50,
+                           ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}
+        `additionalKeys`
+          [((mod4Mask, xK_r), 
+            spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5"),
+           ((mod4Mask, xK_d), kill),
+           ((mod4Mask, xK_z), spawn "xscreensaver-command -lock"),
+           ((mod4Mask, xK_Return), spawn "urxvt"), ....]
+    In the expression:
+      do { xmproc <- spawnPipe "compton -b";
+           xmproc <- spawnPipe "xmobar";
+           spawn "xscreensaver -no-splash";
+           xmonad
+           $ defaultConfig
+               {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+                normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+                manageHook = manageDocks <+> manageHook defaultConfig
+                             <+> composeAll myManagementHooks,
+                layoutHook = avoidStruts $ layoutHook defaultConfig,
+                logHook = dynamicLogWithPP
+                            (xmobarPP
+                               {ppOutput = hPutStrLn xmproc,
+                                ppTitle = xmobarColor "blue" "" . shorten 50,
+                                ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}
+             `additionalKeys`
+               [((mod4Mask, xK_r), 
+                 spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5"),
+                ((mod4Mask, xK_d), kill), ....] }
+
+xmonad.hs:28:24:
+    Couldn't match type `xmonad-0.11:XMonad.Core.Query
+                           (Data.Monoid.Endo xmonad-0.11:XMonad.Core.WindowSet)'
+                  with `Query (Data.Monoid.Endo WindowSet)'
+    Expected type: ManageHook
+      Actual type: xmonad-0.11:XMonad.Core.ManageHook
+    In the first argument of `(<+>)', namely `manageDocks'
+    In the first argument of `(<+>)', namely
+      `manageDocks <+> manageHook defaultConfig'
+    In the `manageHook' field of a record
+
+xmonad.hs:30:21:
+    Couldn't match expected type `X ()'
+                with actual type `xmonad-0.11:XMonad.Core.X ()'
+    In the return type of a call of `dynamicLogWithPP'
+    In the `logHook' field of a record
+    In the first argument of `additionalKeys', namely
+      `defaultConfig
+         {terminal = "urxvt", modMask = mod4Mask, borderWidth = 1,
+          normalBorderColor = "#eeeaea", focusedBorderColor = "#654dff",
+          manageHook = manageDocks <+> manageHook defaultConfig
+                       <+> composeAll myManagementHooks,
+          layoutHook = avoidStruts $ layoutHook defaultConfig,
+          logHook = dynamicLogWithPP
+                      (xmobarPP
+                         {ppOutput = hPutStrLn xmproc,
+                          ppTitle = xmobarColor "blue" "" . shorten 50,
+                          ppCurrent = xmobarColor "blue" "" . wrap "[" "]"})}'
+
+xmonad.hs:40:49:
+    Couldn't match expected type `xmonad-0.11:XMonad.Core.X ()'
+                with actual type `X ()'
+    In the expression: kill
+    In the expression: ((mod4Mask, xK_d), kill)
+    In the second argument of `additionalKeys', namely
+      `[((mod4Mask, xK_r), 
+         spawn "dmenu_run -nb '#fffafa' -nf '#999999' -l 5"),
+        ((mod4Mask, xK_d), kill),
+        ((mod4Mask, xK_z), spawn "xscreensaver-command -lock"),
+        ((mod4Mask, xK_Return), spawn "urxvt"), ....]'

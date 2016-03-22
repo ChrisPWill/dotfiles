@@ -48,7 +48,7 @@ end
 --#############################################################################
 -- Variable definitions
 --#############################################################################
-terminal = "urxvt -name term"
+terminal = "gnome-terminal"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"

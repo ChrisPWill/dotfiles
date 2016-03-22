@@ -17,9 +17,6 @@ compton -b
 xrdb -merge ~/.Xresources
 xbindkeys
 
-# Autostart section
-exec awesome
-
 rssdler -c ~/.config/rssdler/config.txt -d
 
 synclient TapButton1=1

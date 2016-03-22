@@ -5,4 +5,4 @@ export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 fdm=indent nomod 
 export PYTHONSTARTUP=~/.pythonrc
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
 
-source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
+# source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
