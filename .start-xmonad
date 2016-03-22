@@ -1,5 +1,0 @@
-stalonetray &
-nm-applet &
-redshift-gtk &
-feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &
-xmonad

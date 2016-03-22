@@ -17,6 +17,7 @@ main :: IO ()
 main = do
     xmproc <- spawnPipe "compton -b"
     xmproc <- spawnPipe "xmobar"
+    xmproc <- spawnPipe "feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &"
     spawn "xscreensaver -no-splash"
     xmonad $ defaultConfig
         { terminal           = "urxvt"
