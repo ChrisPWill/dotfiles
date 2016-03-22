@@ -78,6 +78,9 @@ let g:ycm_confirm_extra_conf = 0
 
 
 map <C-n> :NERDTreeToggle<CR>
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 
 set tabstop=4
 set shiftwidth=4
