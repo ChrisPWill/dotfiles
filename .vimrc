@@ -91,3 +91,8 @@ set mouse=a
 
 " Keep buffers (including edited ones) open in background
 :set hidden
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
