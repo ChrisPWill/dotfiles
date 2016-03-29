@@ -49,6 +49,8 @@ Plugin 'vimwiki'
 Plugin 'jeetsukumaran/vim-buffergator'
 " YCM
 Plugin 'Valloric/YouCompleteMe'
+" Buffergator
+Plugin 'jeetsukumaran/vim-buffergator'
 
 
 " All of your Plugins must be added before the following line
@@ -107,3 +109,6 @@ let g:pymode_breakpoint_bind = '<leader>p'
 let g:syntastic_cpp_checkers=['']
 
 set pastetoggle=<F2>
+
+" Rebind pymode breakpoint key
+let g:pymode_breakpoint_bind = '<leader>p'
