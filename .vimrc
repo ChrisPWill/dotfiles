@@ -47,6 +47,8 @@ Plugin 'bling/vim-airline'
 " Plugin 'gregsexton/MatchTag'
 " vimwiki
 Plugin 'vimwiki'
+" Buffergator
+Plugin 'jeetsukumaran/vim-buffergator'
 
 
 " All of your Plugins must be added before the following line
@@ -99,3 +101,6 @@ set mouse=a
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Rebind pymode breakpoint key
+let g:pymode_breakpoint_bind = '<leader>p'
