@@ -443,6 +443,7 @@ alias byzanz-record="cd ~/cpw/media/pictures/screencaps/byzanz && byzanz-record 
 alias godev='cd /home/cpw/cpw/dev'
 alias goweb='cd /home/cpw/cpw/web'
 alias gomedia='cd /home/cpw/cpw/media'
+alias goescrow='cd ~/Code/escrow/www'
 
 # Games
 alias evelauncher="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/eve.exe'"
