@@ -4,6 +4,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Layout.SimpleFloat
 
 import System.IO
 
@@ -19,6 +20,10 @@ main = do
     xmproc <- spawnPipe "xmobar"
     xmproc <- spawnPipe "feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &"
     spawn "xscreensaver -no-splash"
+    spawn "stalonetray"
+    spawn "feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &"
+    spawn "nm-applet"
+    spawn "redshift-gtk"
     xmonad $ defaultConfig
         { terminal           = "urxvt"
         , modMask            = mod4Mask
@@ -27,7 +32,7 @@ main = do
         , focusedBorderColor = "#654dff"
 
         , manageHook = manageDocks <+> manageHook defaultConfig <+> composeAll myManagementHooks
-        , layoutHook = avoidStruts  $  layoutHook defaultConfig
+        , layoutHook = avoidStruts  $  (simpleFloat ||| layoutHook defaultConfig)
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
                         , ppTitle = xmobarColor "blue" "" . shorten 50

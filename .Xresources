@@ -63,7 +63,10 @@ URxvt*color15 : #f6f6f6
 !URxvt*background: rgba:4300/4300/4300/dddd
 URxvt*background: #262626
 URxvt*foreground: #919191
+!URxvt*background: #f6f6f6
+!URxvt*foreground: #262626
 URxvt*colorUL: #268bd2
+!URxvt*borderColor: #f6f6f6
 URxvt*borderColor: #262626
 
 !##############################################################################

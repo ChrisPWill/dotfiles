@@ -6,3 +6,6 @@ export PYTHONSTARTUP=~/.pythonrc
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
 
 # source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
+
+export MPD_HOST=192.168.1.82
+export MPD_PORT=6600

@@ -2,6 +2,8 @@
 *.swp
 *.o
 .xmonad/xmonad-x86_64-linux
+.xmonad/xmonad.hi
+.xmonad/xmonad.o
 .config/ranger/history
 .config/ranger/bookmarks
 .taskrc

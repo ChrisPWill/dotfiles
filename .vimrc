@@ -17,8 +17,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 " Improved Javascript
 Plugin 'pangloss/vim-javascript'
-" YCM
-Plugin 'Valloric/YouCompleteMe'
 " Indent guides
 Plugin 'nathanaelkane/vim-indent-guides'
 " Git wrapper
@@ -49,6 +47,8 @@ Plugin 'bling/vim-airline'
 Plugin 'vimwiki'
 " Buffergator
 Plugin 'jeetsukumaran/vim-buffergator'
+" YCM
+Plugin 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before the following line
@@ -104,3 +104,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Rebind pymode breakpoint key
 let g:pymode_breakpoint_bind = '<leader>p'
+let g:syntastic_cpp_checkers=['']
+
+set pastetoggle=<F2>

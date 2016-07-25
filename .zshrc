@@ -409,6 +409,9 @@ alias twcwork='task context work'
 alias twctransit='task context transit'
 alias twclol='task context league'
 alias twa_rustines='task add project:RustiNES +programming +pproject +rust '
+
+# Screen stuff
+alias screen_reattach="screen -rd"
  
 
 # Streams
@@ -442,6 +445,7 @@ alias byzanz-record="cd ~/cpw/media/pictures/screencaps/byzanz && byzanz-record 
 # Bookmarks
 alias godev='cd /home/cpw/cpw/dev'
 alias goweb='cd /home/cpw/cpw/web'
+alias gololmatchnotes='cd /home/cpw/cpw/web/lol_deaths && source venv/bin/activate && cd lolsite'
 alias gomedia='cd /home/cpw/cpw/media'
 alias goescrow='cd ~/Code/escrow/www'
 
