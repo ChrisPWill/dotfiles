@@ -51,7 +51,11 @@ Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'Valloric/YouCompleteMe'
 " Buffergator
 Plugin 'jeetsukumaran/vim-buffergator'
-
+" Show vim undo tree in a window
+Plugin 'mbbill/undotree'
+" Like CtrlP but better
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -85,6 +89,10 @@ map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+nnoremap <C-t> :Files<CR>
+
+"html tidy
+:vmap ,x :!tidy -q -i --show-errors 0<CR>
 
 set tabstop=4
 set shiftwidth=4
@@ -112,3 +120,6 @@ set pastetoggle=<F2>
 
 " Rebind pymode breakpoint key
 let g:pymode_breakpoint_bind = '<leader>p'
+
+" eslint
+let g:syntastic_javascript_checkers = ['eslint']

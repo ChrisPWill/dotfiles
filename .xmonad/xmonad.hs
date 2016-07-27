@@ -16,14 +16,13 @@ myManagementHooks = [
 
 main :: IO ()
 main = do
-    xmproc <- spawnPipe "compton -b"
-    xmproc <- spawnPipe "xmobar"
-    xmproc <- spawnPipe "feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &"
+    spawn "compton -b"
     spawn "xscreensaver -no-splash"
     spawn "stalonetray"
     spawn "feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &"
     spawn "nm-applet"
     spawn "redshift-gtk"
+    xmproc <- spawnPipe "xmobar"
     xmonad $ defaultConfig
         { terminal           = "urxvt"
         , modMask            = mod4Mask

@@ -74,12 +74,12 @@ URxvt*borderColor: #262626
 !##############################################################################
 
 Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
+!Xft.antialias: true
+!Xft.hinting: true
 Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintfull
-Xft.lcdfilter: lcddefault
+!Xft.autohint: false
+!Xft.hintstyle: hintfull
+!Xft.lcdfilter: lcddefault
 
 !URxvt*font: xft:lemon:pixelsize=11:antialias=false,\
 !            [codeset=JISX0208]xft:Kochi Gothic,\
@@ -89,15 +89,15 @@ Xft.lcdfilter: lcddefault
 !            [codeset=JISX0208]xft:Kochi Gothic,\
 !            [codeset=KSC5601]xft:Baekmuk Dotum,\
 !            xft:WenQuanYi Bitmap Song
-URxvt*font: xft:uushi:pixelsize=11:antialias=false,\
+URxvt*font: xft:uushi:Regular:pixelsize=11:antialias=false,\
             [codeset=JISX0208]xft:Kochi Gothic,\
             [codeset=KSC5601]xft:Baekmuk Dotum,\
             xft:WenQuanYi Bitmap Song
-URxvt*boldFont: xft:uushi:pixelsize=11:antialias=false,\
+URxvt*boldFont: xft:uushi:Regular:pixelsize=11:antialias=false,\
             [codeset=JISX0208]xft:Kochi Gothic,\
             [codeset=KSC5601]xft:Baekmuk Dotum,\
             xft:WenQuanYi Bitmap Song
-URxvt*imFont: -*-Kochi Gothic-medium-r-normal--11-140-*-*-*-*-*-*
+!URxvt*imFont: -*-Kochi Gothic-medium-r-normal--11-140-*-*-*-*-*-*
 
 !##############################################################################
 ! Scrolling and Cursor
@@ -107,7 +107,7 @@ URxvt*saveLines: 10000
 URxvt*scrollstyle: plain
 URxvt*scrollBar: false
 URxvt*cursorBlink: true
-URxvt*cursorUnderline: true
+URxvt*cursorUnderline: false
 
 !##############################################################################
 ! Keybindings
@@ -119,7 +119,10 @@ URxvt.keysym.C-d: command:\033]721;1\007
 !URxvt.keysym.S-space: command: \033[1~
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard
+URxvt.perl-ext-common: default,clipboard,resize-font
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
 
 !##############################################################################
 ! Various Settings
@@ -128,7 +131,7 @@ URxvt.perl-ext-common: default,clipboard
 !URxvt.perl-lib: /home/nil/.config/urxvt
 URxvt.perl-ext: default,matcher
 URxvt.matcher.button: 1
-URxvt.urlLauncher: /usr/bin/firefox
+URxvt.urlLauncher: /usr/bin/firefox.real
 ! Highlight to end of last character, not the full line (particularly more convenient for yanking).
 ! Not working.
 !URxvt.highlightSelection: true

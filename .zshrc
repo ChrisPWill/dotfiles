@@ -375,6 +375,7 @@ bindkey -M vicmd "ga" what-cursor-position      # ga
 ###############################################################################
 # Alias
 ###############################################################################
+alias xclip='xclip -selection c'
 alias swap_caps_esc='/usr/bin/setxkbmap -option "caps:swapescape"'
 
 alias ls='ls -a --color'
@@ -413,6 +414,8 @@ alias twa_rustines='task add project:RustiNES +programming +pproject +rust '
 # Screen stuff
 alias screen_reattach="screen -rd"
  
+# git
+alias gitbranchlist='git for-each-ref --sort=-committerdate refs/heads/'
 
 # Streams
 
@@ -456,3 +459,6 @@ alias eveonline="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/bin/e
 # dynamic-colors switch solarized-dark-desaturated
 
 export PATH=$PATH:/home/cwilliams/phabricator/arcanist/bin
+
+export NVM_DIR="/home/cwilliams/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
