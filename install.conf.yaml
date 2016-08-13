@@ -1,0 +1,27 @@
+- link:
+    ~/.config/mpv:
+        create: true
+        path: config/mpv/
+    ~/.config/ranger:
+        create: true
+        path: config/ranger/
+    ~/.fonts:
+        create: true
+        path: fonts/
+    ~/.pentadactyl/colors:
+       create: true
+       path: pentadactyl/colors/
+    ~/.xmonad:
+        create: true
+        path: xmonad/
+    ~/.zsh:
+        create: true
+        path: zsh/
+    ~/.pentadactylrc: .pentadactylrc
+    ~/.stalonetrayrc: .stalonetrayrc
+    ~/.xinitrc: .xinitrc
+    ~/.xmobarrc: .xmobarrc
+    ~/.Xresources: .Xresources
+    ~/.zshrc:
+        force: true
+        path: .zshrc
