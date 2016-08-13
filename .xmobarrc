@@ -1,0 +1,77 @@
+Config {
+  -- appearance
+    font =          "xft:Nu:side=9:antialias=true"
+  , bgColor =       "#fffafa"
+  , fgColor =       "#999999"
+  , position =      TopP 0 76
+
+  -- layout
+  , sepChar =       "%"  -- separates plugin names and text
+  , alignSep =      "}{" -- left-right alignment separator
+  , template =      "%StdinReader% }{ %multicpu% | %memory% || %battery% || %date%"
+
+  -- general behaviour
+  , lowerOnStart =      True  -- send to bottom of window stack
+  , hideOnStart =       False -- start with window unmapped (hidden)
+  , allDesktops =       True  -- show on all desktops
+  , overrideRedirect =  False -- act as docked app in tiling WMs
+  , pickBroadest =      False -- choose widest display
+  , persistent =        True  -- prevent from being hidden
+
+  -- plugins
+  , commands =
+       -- weather monitor
+       [ Run StdinReader
+       -- , Run Weather "YSSY" [ "--template", "<skyCondition> | <fc=blue><tempC></fc>°C"
+       --                     ] 36000
+
+       -- network activity monitor (dynamic interface resolution)
+       , Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
+                            , "--Low"      , "1000"       -- units: kB/s
+                            , "--High"     , "5000"       -- units: kB/s
+                            , "--low"      , "green"
+                            , "--normal"   , "orange"
+                            , "--high"     , "red"
+                            ] 10
+
+       -- cpu activity monitor
+       , Run MultiCpu       [ "--template" , "Cpu: <total0>%|<total1>%"
+                            , "--Low"      , "50"         -- units: %
+                            , "--High"     , "85"         -- units: %
+                            , "--low"      , "green"
+                            , "--normal"   , "orange"
+                            , "--high"     , "red"
+                            ] 10
+
+       -- memory usage monitor
+       , Run Memory         [ "--template" ,"Mem: <usedratio>%"
+                            , "--Low"      , "35"        -- units: %
+                            , "--High"     , "85"        -- units: %
+                            , "--low"      , "green"
+                            , "--normal"   , "orange"
+                            , "--high"     , "red"
+                            ] 10
+
+       -- battery monitor
+       , Run Battery        [ "--template" , "Batt: <acstatus>"
+                            , "--Low"      , "10"        -- units: %
+                            , "--High"     , "80"        -- units: %
+                            , "--low"      , "red"
+                            , "--normal"   , "orange"
+                            , "--high"     , "green"
+
+                            , "--" -- battery specific options
+                                      -- discharging status
+                                      , "-o"	, "<left>% (<timeleft>)"
+                                      -- AC "on" status
+                                      , "-O"	, "<fc=orange>Charging</fc>"
+                                      -- charged status
+                                      , "-i"	, "<fc=green>Charged</fc>"
+                            ] 50
+
+       -- time and date indicator 
+       --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
+       , Run Date           "<fc=#ABABAB>%a %d %b %R</fc>" "date" 10
+
+       ]
+}
