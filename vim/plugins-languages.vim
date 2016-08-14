@@ -4,4 +4,6 @@
 
 " Syntastic
 Plugin 'scrooloose/syntastic'
+" python-mode
+Plugin 'klen/python-mode'
 
