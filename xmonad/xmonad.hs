@@ -30,7 +30,7 @@ main = do
         , focusedBorderColor = "#654dff"
 
         , manageHook = manageDocks <+> manageHook defaultConfig <+> composeAll myManagementHooks
-        , layoutHook = avoidStruts  $  (simpleFloat ||| layoutHook defaultConfig)
+        , layoutHook = avoidStruts  $  (layoutHook defaultConfig ||| simpleFloat)
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
                         , ppTitle = xmobarColor "blue" "" . shorten 50
