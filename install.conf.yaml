@@ -22,7 +22,7 @@
     ~/.xinitrc: .xinitrc
     ~/.xmobarrc: .xmobarrc
     ~/.Xresources: .Xresources
-    ~/.shenv: .zshenv
+    ~/.zshenv: .zshenv
     ~/.zshrc:
         force: true
         path: .zshrc
