@@ -3,3 +3,4 @@ xmonad/xmonad.hi
 xmonad/xmonad.o
 xmonad/xmonad-x86_64-linux
 config/mpv/watch_later
+config/ranger
