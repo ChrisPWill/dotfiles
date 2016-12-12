@@ -364,6 +364,8 @@ bindkey -M vicmd "ga" what-cursor-position      # ga
 ###############################################################################
 # Alias
 ###############################################################################
+alias docker_interactive='docker run -it --rm'
+
 alias ls='ls -a --color'
 alias lsl='ls -lah --color'
 alias grep='grep --color'
