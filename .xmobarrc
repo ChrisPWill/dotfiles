@@ -3,7 +3,7 @@ Config {
     font =          "xft:Nu:side=9:antialias=true"
   , bgColor =       "#fffafa"
   , fgColor =       "#999999"
-  , position =      TopP 0 76
+  , position =      TopP 0 92
 
   -- layout
   , sepChar =       "%"  -- separates plugin names and text

@@ -19,10 +19,9 @@ main = do
     xmproc <- spawnPipe "xmobar"
     spawn "xscreensaver -no-splash"
     spawn "stalonetray"
-    spawn "feh --bg-scale /home/cpw/.config/awesome/themes/cpw/wallpaper2.jpg &"
-    spawn "nm-applet"
+    spawn "feh --bg-scale /home/cwilliams/.config/awesome/themes/cpw/wallpaper2.jpg &"
     spawn "redshift-gtk"
-    xmonad $ defaultConfig
+    xmonad $ docks $ defaultConfig
         { terminal           = "urxvt"
         , modMask            = mod4Mask
         , borderWidth        = 1
@@ -47,4 +46,5 @@ main = do
         , ((mod4Mask,               xK_Return), spawn "urxvt")    -- Terminal
          -- > Web
         , ((mod4Mask,               xK_f     ), spawn "firefox")
+        , ((mod4Mask,               xK_g     ), spawn "google-chrome-stable")
         ]
