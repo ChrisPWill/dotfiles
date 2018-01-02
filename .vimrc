@@ -49,8 +49,6 @@ Plugin 'vimwiki'
 Plugin 'jeetsukumaran/vim-buffergator'
 " YCM
 Plugin 'Valloric/YouCompleteMe'
-" Buffergator
-Plugin 'jeetsukumaran/vim-buffergator'
 " Show vim undo tree in a window
 Plugin 'mbbill/undotree'
 " Like CtrlP but better
