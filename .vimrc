@@ -20,6 +20,7 @@ Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 " fzf
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " Make airline appear always
 set laststatus=2
@@ -28,6 +29,8 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+
+nnoremap <C-t> :Files<CR>
 " =============================================
 " Language specific plugins and syntax checking
 " =============================================
