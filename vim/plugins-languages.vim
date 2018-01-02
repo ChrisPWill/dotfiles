@@ -8,4 +8,5 @@ Plugin 'scrooloose/syntastic'
 Plugin 'klen/python-mode'
 " Rust syntax highlighting
 Plugin 'rust-lang/rust.vim'
-
+" Project settings for editors
+Plugin 'editorconfig/editorconfig-vim'
