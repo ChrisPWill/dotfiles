@@ -25,3 +25,5 @@ fi
 
 # anacron
 /usr/sbin/anacron -s -t ${HOME}/.anacron/etc/anacrontab -S ${HOME}/.anacron/spool
+
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -123,3 +123,5 @@ let g:pymode_breakpoint_bind = '<leader>p'
 
 " eslint
 let g:syntastic_javascript_checkers = ['eslint']
+
+set backupcopy=yes

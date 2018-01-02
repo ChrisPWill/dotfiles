@@ -4,6 +4,7 @@
 .xmonad/xmonad-x86_64-linux
 .xmonad/xmonad.hi
 .xmonad/xmonad.o
+.xmonad/xmonad.state
 .config/ranger/history
 .config/ranger/bookmarks
 .taskrc

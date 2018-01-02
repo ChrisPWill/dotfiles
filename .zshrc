@@ -375,6 +375,10 @@ bindkey -M vicmd "ga" what-cursor-position      # ga
 ###############################################################################
 # Alias
 ###############################################################################
+alias docker_rmnoneimages="docker rmi -f \$(docker images | grep \"^<none>\" | awk '{print \$3}')"
+alias masterpush="./run.sh check && git push"
+alias chrispush="./run.sh check && git push"
+
 alias xclip='xclip -selection c'
 alias swap_caps_esc='/usr/bin/setxkbmap -option "caps:swapescape"'
 
@@ -456,9 +460,57 @@ alias goescrow='cd ~/Code/escrow/www'
 alias evelauncher="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/eve.exe'"
 alias eveonline="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/bin/exefile.exe'"
 
+alias fucking="sudo"
+
 # dynamic-colors switch solarized-dark-desaturated
 
 export PATH=$PATH:/home/cwilliams/phabricator/arcanist/bin
 
 export NVM_DIR="/home/cwilliams/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Phabricator
+alias lepatchface='arc patch --nobranch --skip-dependencies'
+
+arcpatchall() {
+    for i in "$@"; do
+        arc patch --nobranch --skip-dependencies "$i"
+    done
+}
+
+opencommitfiles() {
+    vim `git diff-tree --no-commit-id --name-only -r "$1"`
+}
+
+up() { cd `for i in $(seq 1 ${1:-1}); do printf "%s" "../"; done`; }
+
+mk() { mkdir $1; cd $1; }
+
+###############################################################################
+# SSH
+###############################################################################
+SSH_ENV="$HOME/.ssh/environment"
+
+function start_agent {
+    echo "Initialising new SSH agent..."
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add;
+}
+
+# Source SSH settings, if applicable
+
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
+fi
+
+
+source ~/.cargo/env
+
