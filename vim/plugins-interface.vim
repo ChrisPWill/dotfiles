@@ -9,6 +9,8 @@ Plugin 'bling/vim-airline'
 " fzf
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+" vim fugitive
+Plugin 'tpope/vim-fugitive'
 
 " Make airline appear always
 set laststatus=2
