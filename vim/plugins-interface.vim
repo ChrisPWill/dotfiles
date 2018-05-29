@@ -6,8 +6,6 @@
 Plugin 'scrooloose/nerdtree'
 " vim-airline
 Plugin 'bling/vim-airline'
-" YCM
-Plugin 'Valloric/YouCompleteMe'
 " fzf
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -19,5 +17,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+let $FZF_DEFAULT_COMMAND = 'rg -l ""'
 
 nnoremap <C-t> :Files<CR>

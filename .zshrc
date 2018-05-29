@@ -382,7 +382,7 @@ alias chrispush="./run.sh check && git push"
 alias xclip='xclip -selection c'
 alias swap_caps_esc='/usr/bin/setxkbmap -option "caps:swapescape"'
 
-alias ls='ls -a --color'
+alias ls='exa -la'
 alias lsl='ls -lah --color'
 alias grep='grep --color'
 
@@ -514,3 +514,5 @@ fi
 
 source ~/.cargo/env
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

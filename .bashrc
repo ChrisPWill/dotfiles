@@ -116,3 +116,5 @@ export NVM_DIR="/home/cwilliams/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH=$PATH:/home/cwilliams/phabricator/arcanist/bin
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
