@@ -462,6 +462,8 @@ alias eveonline="wine '/home/cpw/.wine/drive_c/Program Files (x86)/CCP/EVE/bin/e
 
 alias fucking="sudo"
 
+alias vim="nvim"
+
 # dynamic-colors switch solarized-dark-desaturated
 
 export PATH=$PATH:/home/cwilliams/phabricator/arcanist/bin
@@ -479,7 +481,7 @@ arcpatchall() {
 }
 
 opencommitfiles() {
-    vim `git diff-tree --no-commit-id --name-only -r "$1"`
+    nvim `git diff-tree --no-commit-id --name-only -r "$1"`
 }
 
 up() { cd `for i in $(seq 1 ${1:-1}); do printf "%s" "../"; done`; }
