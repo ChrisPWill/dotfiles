@@ -23,7 +23,7 @@ main = do
     spawn "nm-applet"
     spawn "redshift-gtk"
     xmproc <- spawnPipe "xmobar"
-    xmonad $ defaultConfig
+    xmonad $ docks defaultConfig
         { terminal           = "urxvt"
         , modMask            = mod4Mask
         , borderWidth        = 1
