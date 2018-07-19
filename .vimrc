@@ -32,6 +32,11 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let $FZF_DEFAULT_COMMAND = 'rg -l ""'
 
 nnoremap <C-t> :Files<CR>
+
+hi DiffAdd      cterm=none    ctermfg=NONE      ctermbg=NONE
+hi DiffChange   cterm=none    ctermfg=NONE      ctermbg=NONE
+hi DiffDelete   cterm=none    ctermfg=NONE      ctermbg=NONE
+hi DiffText     cterm=none    ctermfg=NONE      ctermbg=NONE
 " =============================================
 " Language specific plugins and syntax checking
 " =============================================
